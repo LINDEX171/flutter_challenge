@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'dart:async';  // For using the Timer
 import 'home_screen.dart';  // Import home screen file
 
@@ -26,18 +27,13 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,  // Background color of the splash screen
+      backgroundColor: Colors.white,  // Background color for splash screen
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            // Logo or image for the splash screen
-            Image.asset(
-              'assets/insta.png',  // Make sure to add an image in assets
-              width: 150,
-              height: 150,
-            ),
-          ],
+        // Display only the logo/image in the center of the screen
+        child: Image.asset(
+          'assets/insta.png',  // Ensure the logo is in assets
+          width: 150,
+          height: 150,
         ),
       ),
     );
